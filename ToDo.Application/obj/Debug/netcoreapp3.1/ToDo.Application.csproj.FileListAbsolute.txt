@@ -1,0 +1,12 @@
+H:\Workspace\ToDoList\ToDo.Application\bin\Debug\netcoreapp3.1\ToDo.Application.deps.json
+H:\Workspace\ToDoList\ToDo.Application\bin\Debug\netcoreapp3.1\ToDo.Application.dll
+H:\Workspace\ToDoList\ToDo.Application\bin\Debug\netcoreapp3.1\ToDo.Application.pdb
+H:\Workspace\ToDoList\ToDo.Application\obj\Debug\netcoreapp3.1\ToDo.Application.csprojAssemblyReference.cache
+H:\Workspace\ToDoList\ToDo.Application\obj\Debug\netcoreapp3.1\ToDo.Application.AssemblyInfoInputs.cache
+H:\Workspace\ToDoList\ToDo.Application\obj\Debug\netcoreapp3.1\ToDo.Application.AssemblyInfo.cs
+H:\Workspace\ToDoList\ToDo.Application\obj\Debug\netcoreapp3.1\ToDo.Application.csproj.CoreCompileInputs.cache
+H:\Workspace\ToDoList\ToDo.Application\obj\Debug\netcoreapp3.1\ToDo.Application.dll
+H:\Workspace\ToDoList\ToDo.Application\obj\Debug\netcoreapp3.1\ToDo.Application.pdb
+H:\Workspace\ToDoList\ToDo.Application\bin\Debug\netcoreapp3.1\ToDo.Domain.dll
+H:\Workspace\ToDoList\ToDo.Application\bin\Debug\netcoreapp3.1\ToDo.Domain.pdb
+H:\Workspace\ToDoList\ToDo.Application\obj\Debug\netcoreapp3.1\ToDo.Application.csproj.CopyComplete

@@ -1,0 +1,17 @@
+H:\Workspace\ToDoList\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\ToDo.Infrastructure.deps.json
+H:\Workspace\ToDoList\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\ToDo.Infrastructure.dll
+H:\Workspace\ToDoList\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\ToDo.Infrastructure.pdb
+H:\Workspace\ToDoList\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.csprojAssemblyReference.cache
+H:\Workspace\ToDoList\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.AssemblyInfoInputs.cache
+H:\Workspace\ToDoList\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.AssemblyInfo.cs
+H:\Workspace\ToDoList\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.csproj.CoreCompileInputs.cache
+H:\Workspace\ToDoList\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.dll
+H:\Workspace\ToDoList\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.pdb
+H:\Workspace\ToDoList\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\snappy32.dll
+H:\Workspace\ToDoList\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\snappy64.dll
+H:\Workspace\ToDoList\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\libzstd.dll
+H:\Workspace\ToDoList\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\ToDo.Application.dll
+H:\Workspace\ToDoList\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\ToDo.Domain.dll
+H:\Workspace\ToDoList\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\ToDo.Application.pdb
+H:\Workspace\ToDoList\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\ToDo.Domain.pdb
+H:\Workspace\ToDoList\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.csproj.CopyComplete
