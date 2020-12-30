@@ -1,9 +1,0 @@
-H:\Workspace\ToDoList\ToDo.Domain\bin\Debug\netcoreapp3.1\ToDo.Domain.deps.json
-H:\Workspace\ToDoList\ToDo.Domain\bin\Debug\netcoreapp3.1\ToDo.Domain.dll
-H:\Workspace\ToDoList\ToDo.Domain\bin\Debug\netcoreapp3.1\ToDo.Domain.pdb
-H:\Workspace\ToDoList\ToDo.Domain\obj\Debug\netcoreapp3.1\ToDo.Domain.csprojAssemblyReference.cache
-H:\Workspace\ToDoList\ToDo.Domain\obj\Debug\netcoreapp3.1\ToDo.Domain.AssemblyInfoInputs.cache
-H:\Workspace\ToDoList\ToDo.Domain\obj\Debug\netcoreapp3.1\ToDo.Domain.AssemblyInfo.cs
-H:\Workspace\ToDoList\ToDo.Domain\obj\Debug\netcoreapp3.1\ToDo.Domain.csproj.CoreCompileInputs.cache
-H:\Workspace\ToDoList\ToDo.Domain\obj\Debug\netcoreapp3.1\ToDo.Domain.dll
-H:\Workspace\ToDoList\ToDo.Domain\obj\Debug\netcoreapp3.1\ToDo.Domain.pdb

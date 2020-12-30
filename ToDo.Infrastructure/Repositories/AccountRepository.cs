@@ -44,9 +44,7 @@ namespace ToDo.Infrastructure.Repositories
             Account result = Account.Load(
                 account.Id,
                 account.UserId,
-                collection,
-                account.CreatedDate
-                );
+                collection);
 
             return result;
         }
