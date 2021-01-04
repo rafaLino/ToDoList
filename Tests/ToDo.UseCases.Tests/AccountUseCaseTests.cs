@@ -28,7 +28,8 @@ namespace ToDo.UseCases.Tests
         {
             var _createTaskUseCase = new CreateTaskUseCase(_accountReadOnlyRepositoryMock.Object, _accountWriteOnlyRepositoryMock.Object);
             Guid accountId = Guid.NewGuid();
-            ToDoItem toDoItem = new ToDoItem("some task", DateTime.Today);
+            string task = "some task";
+            DateTime taskDate = DateTime.Today;
             var account = Account.Load(
                     accountId,
                     Guid.NewGuid(),
@@ -42,7 +43,7 @@ namespace ToDo.UseCases.Tests
             _accountWriteOnlyRepositoryMock
                 .Setup(x => x.Update(account));
 
-            await _createTaskUseCase.Execute(accountId, toDoItem);
+            await _createTaskUseCase.Execute(accountId, task, taskDate);
 
             _accountReadOnlyRepositoryMock.VerifyAll();
             _accountWriteOnlyRepositoryMock.VerifyAll();

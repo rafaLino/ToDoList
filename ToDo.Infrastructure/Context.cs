@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Options;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
+using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Driver;
 using ToDo.Infrastructure.Entities;
 
@@ -20,10 +22,28 @@ namespace ToDo.Infrastructure
             Map();
         }
 
-        public IMongoCollection<ToDoItem> ToDos { get; set; }
-        public IMongoCollection<User> Users { get; set; }
+        public IMongoCollection<ToDoItem> ToDos
+        {
+            get
+            {
+                return _dataBase.GetCollection<ToDoItem>("ToDoItems");
+            }
+        }
+        public IMongoCollection<User> Users
+        {
+            get
+            {
+                return _dataBase.GetCollection<User>("Users");
+            }
+        }
 
-        public IMongoCollection<Account> Accounts { get; set; }
+        public IMongoCollection<Account> Accounts
+        {
+            get
+            {
+                return _dataBase.GetCollection<Account>("Accounts");
+            }
+        }
 
 
         private void Map()
@@ -34,6 +54,11 @@ namespace ToDo.Infrastructure
             });
 
             BsonClassMap.RegisterClassMap<User>(cm =>
+            {
+                cm.AutoMap();
+            });
+
+            BsonClassMap.RegisterClassMap<Account>(cm =>
             {
                 cm.AutoMap();
             });

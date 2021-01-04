@@ -8,9 +8,9 @@ namespace ToDo.Application.Results
 
         public Guid AccountId { get; }
 
-        public List<ToDoResult> ToDoList { get; }
+        public IEnumerable<ToDoResult> ToDoList { get; }
 
-        public AccountResult(Guid accountId, List<ToDoResult> toDoList)
+        public AccountResult(Guid accountId, IEnumerable<ToDoResult> toDoList)
         {
             AccountId = accountId;
             ToDoList = toDoList;

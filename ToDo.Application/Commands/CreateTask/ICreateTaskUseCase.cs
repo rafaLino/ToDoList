@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
-using ToDo.Domain.Accounts;
+using ToDo.Application.Results;
 
 namespace ToDo.Application.Commands.CreateTask
 {
     public interface ICreateTaskUseCase
     {
-        Task Execute(Guid accountId, ToDoItem task);
+        Task<ToDoResult> Execute(Guid accountId, string taskDescription, DateTime taskDate);
     }
 }

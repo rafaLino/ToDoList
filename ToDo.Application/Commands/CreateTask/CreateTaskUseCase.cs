@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using ToDo.Application.Exceptions;
 using ToDo.Application.Repositories;
+using ToDo.Application.Results;
 using ToDo.Domain.Accounts;
 
 namespace ToDo.Application.Commands.CreateTask
@@ -18,16 +19,18 @@ namespace ToDo.Application.Commands.CreateTask
             _accountWriteOnlyRepository = accountWriteOnlyRepository;
         }
 
-        public async Task Execute(Guid accountId, ToDoItem task)
+        public async Task<ToDoResult> Execute(Guid accountId, string taskDescription, DateTime taskDate)
         {
             Account account = await _accountReadOnlyRepository.Get(accountId);
-
+            ToDoItem task = new ToDoItem(taskDescription, taskDate);
             if (account == null)
                 throw new AccountNotFoundException($"The account {accountId} does not exists");
 
             account.NewTask(task);
 
             await _accountWriteOnlyRepository.Update(account);
+
+            return new ToDoResult(task.Task, task.TaskDate, task.Done);
         }
     }
 }

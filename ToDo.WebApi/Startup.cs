@@ -36,7 +36,6 @@ namespace ToDo.WebApi
                     .AllowAnyOrigin()
                     .AllowAnyMethod()
                     .AllowAnyHeader()
-                    .AllowCredentials()
                     );
             });
         }
@@ -59,7 +58,7 @@ namespace ToDo.WebApi
             app.UseAuthorization();
 
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ToDo List v1"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api"));
 
             app.UseEndpoints(endpoints =>
             {

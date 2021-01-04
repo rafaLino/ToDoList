@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Linq;
+using System.Reflection;
 
 namespace ToDo.Infrastructure.IoCManager
 {
@@ -11,6 +13,7 @@ namespace ToDo.Infrastructure.IoCManager
             AddContext(services);
             AddRepositories(services);
             AddServices(services);
+            AddQueries(services);
         }
         public static void AddConfig(this IServiceCollection services, IConfiguration config)
         {
@@ -34,7 +37,10 @@ namespace ToDo.Infrastructure.IoCManager
 
             foreach (var type in types)
             {
-                services.AddScoped(type.GetInterfaces().First(), type);
+                foreach (var interfaceType in type.GetInterfaces())
+                {
+                    services.AddScoped(interfaceType, type);
+                }
             }
         }
 
@@ -42,6 +48,26 @@ namespace ToDo.Infrastructure.IoCManager
         public static void AddServices(IServiceCollection services)
         {
             const string suffix = "UseCase";
+            Assembly applicationAssembly = AppDomain
+                .CurrentDomain
+                .GetAssemblies()
+                .Single(x => x.GetName().Name == "ToDo.Application");
+            var types = applicationAssembly
+                .GetTypes()
+                .Where(type => !type.IsAbstract &&
+                    type.Name.EndsWith(suffix, System.StringComparison.InvariantCultureIgnoreCase) &&
+                    type.GetInterfaces().First().Name.EndsWith(suffix, System.StringComparison.InvariantCultureIgnoreCase)
+                );
+
+            foreach (var type in types)
+            {
+                services.AddScoped(type.GetInterfaces().First(), type);
+            }
+        }
+
+        public static void AddQueries(IServiceCollection services)
+        {
+            const string suffix = "Queries";
             var types = typeof(IoCManager).Assembly
                 .GetTypes()
                 .Where(type => !type.IsAbstract &&
